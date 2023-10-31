@@ -1,0 +1,282 @@
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.main .main-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+.main .main-content .bloc-phone {
+  position: relative;
+}
+.main .main-content .bloc-phone .scr4 {
+  animation: slideScreen 3s linear 3s forwards;
+}
+.main .main-content .bloc-phone .scr3 {
+  animation: slideScreen1 3s linear 5.9s forwards;
+  opacity: 0;
+}
+.main .main-content .bloc-phone .scr2 {
+  animation: slideScreen2 3s linear 8.9s forwards;
+  opacity: 0;
+}
+.main .main-content .bloc-phone .scr1 {
+  animation: slideScreen3 3s linear 11.9s forwards;
+  opacity: 0;
+}
+.main .main-content .bloc-form {
+  width: 360px;
+  margin-top: 15px;
+  margin-right: 30px;
+  align-self: flex-start;
+}
+.main .main-content .bloc-form form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dbdbdb;
+  flex-shrink: 2;
+  margin-bottom: 10px;
+}
+.main .main-content .bloc-form form .insta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+.main .main-content .bloc-form form .insta img {
+  width: 205px;
+  padding: 15px;
+}
+.main .main-content .bloc-form form input {
+  padding: 10px;
+  margin: 0 40px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+}
+.main .main-content .bloc-form form input:first-of-type {
+  margin-bottom: 5px;
+}
+.main .main-content .bloc-form form input:last-of-type {
+  margin-bottom: 15px;
+}
+.main .main-content .bloc-form form button {
+  font-family: "apple-system", "BlinkMacSystemFont";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: #50b4fc;
+  width: 276px;
+  padding: 8px;
+  margin: 0 40px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  color: white;
+}
+.main .main-content .bloc-form form .hr {
+  margin: 8px 45px 20px 45px;
+}
+.main .main-content .bloc-form form .hr p {
+  font-family: "apple-system", "BlinkMacSystemFont";
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+.main .main-content .bloc-form form .hr p::before {
+  content: "";
+  display: inline-block;
+  width: 41%;
+  height: 1px;
+  background-color: #dbdbdb;
+  margin-right: 14px;
+  position: relative;
+  top: -5px;
+}
+.main .main-content .bloc-form form .hr p::after {
+  content: "";
+  display: inline-block;
+  width: 41%;
+  height: 1px;
+  background-color: #dbdbdb;
+  margin-left: 14px;
+  position: relative;
+  top: -5px;
+}
+.main .main-content .bloc-form form .log-in-fr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-family: "apple-system", "BlinkMacSystemFont";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #385185;
+}
+.main .main-content .bloc-form form .log-in-fr span {
+  padding-left: 5px;
+}
+.main .main-content .bloc-form form .mdp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-family: "apple-system", "BlinkMacSystemFont";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #00376b;
+}
+.main .main-content .bloc-form .sign-up {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #dbdbdb;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+.main .main-content .bloc-form .sign-up span:nth-child(1) {
+  font-family: "apple-system", "BlinkMacSystemFont";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #262626;
+}
+.main .main-content .bloc-form .sign-up span:nth-child(2) {
+  font-family: "apple-system", "BlinkMacSystemFont";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #0095f6;
+  margin-left: 2px;
+}
+.main .main-content .bloc-form .dwnl {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-family: "apple-system", "BlinkMacSystemFont";
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #262626;
+}
+.main .main-content .bloc-form .store-download {
+  display: flex;
+  justify-content: center;
+}
+.main .main-content .bloc-form .store-download img {
+  width: 134px;
+  height: 40px;
+}
+.main .main-content .bloc-form .store-download img:nth-child(2) {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 875px) {
+  .main .main-content .bloc-phone {
+    display: none;
+  }
+  .main .main-content .bloc-form {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main .main-content .bloc-form form {
+    border: none;
+  }
+  .main .main-content .bloc-form .sign-up {
+    border: none;
+  }
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+.footer .footer-content a {
+  font-family: "apple-system", "BlinkMacSystemFont";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #8e8e8e;
+  text-decoration: none;
+  padding-left: 18px;
+  padding-bottom: 10px;
+}
+.footer .links2 {
+  font-family: "apple-system", "BlinkMacSystemFont";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #8e8e8e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer .links2 .langue {
+  display: flex;
+  align-items: center;
+}
+.footer .links2 .langue select {
+  width: 20px;
+  border: none;
+  color: #8e8e8e;
+}
+.footer .links2 .langue select option {
+  color: #1c1e21;
+}
+.footer .links2 p {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.screenshot {
+  position: absolute;
+  z-index: 999999;
+  top: 4.3%;
+  left: 33.5%;
+}
+
+@keyframes slideScreen {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slideScreen1 {
+  0% {
+    opacity: 1;
+  }
+}
+@keyframes slideScreen2 {
+  0% {
+    opacity: 1;
+  }
+}
+@keyframes slideScreen3 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
